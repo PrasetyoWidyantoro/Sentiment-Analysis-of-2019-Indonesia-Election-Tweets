@@ -123,4 +123,16 @@ The dataset consists of 1815 entries, each representing a tweet related to the 2
 | LSTM                           | 0.62     |
 | indobenchmark/indobert-base-p1 | 0.68     |
 
+### Analysis of Best Models
+
+From the experiments conducted, the best performing models are:
+
+#### Stemming Data
+- **TFIDF Basic MLP and BiLSTM**: Both models achieved an accuracy of 0.61. These models demonstrated consistent performance in capturing the nuances of sentiment analysis from stemmed data.
+
+- **Transformer Model (indobenchmark/indobert-base-p1 (2 epochs))**: This transformer model achieved an accuracy of 0.66, showcasing its effectiveness in understanding sentiment from the text data. Despite the slightly higher accuracy, it's important to note the computational complexity and training time associated with transformer models.
+
+#### Non-Stemming Data
+- **Non-Stemming Data**: In experiments with non-stemmed data, the **MLP (Basic) - TFIDF** model stood out with an accuracy of 0.64, while the transformer model **indobenchmark/indobert-base-p1** achieved an even higher accuracy of 0.68. This highlights the impact of data preprocessing choices on model performance.
+
 ---
